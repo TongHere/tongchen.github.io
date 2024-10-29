@@ -32,6 +32,14 @@
             padding: 1rem;
             border-radius: 8px;
             background-color: #f8f9fa;
+            min-height: 600px; /* Ensure enough space for the widget */
+        }
+        /* Specific styling for the ElevenLabs widget */
+        elevenlabs-convai {
+            display: block;
+            width: 100%;
+            height: 500px;
+            border: none;
         }
         .footer {
             margin-top: 2rem;
@@ -46,8 +54,15 @@
         <p>This page features an integrated ElevenLabs Convai chat widget. Try interacting with it below!</p>
         
         <div class="chat-container">
-            <elevenlabs-convai agent-id="f2rYWbsoInaOzCea6BTu"></elevenlabs-convai>
-            <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+            <elevenlabs-convai 
+                agent-id="f2rYWbsoInaOzCea6BTu"
+                style="width: 100%; height: 500px;">
+            </elevenlabs-convai>
+            <script 
+                src="https://elevenlabs.io/convai-widget/index.js" 
+                async 
+                type="text/javascript">
+            </script>
         </div>
     </div>
 
